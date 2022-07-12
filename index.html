@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="全球资产测绘,网络空间测绘,信息资产发现" />
+    <meta name="description" content="零零信安 (00sec.com) 攻击面管理专家" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <link rel="stylesheet" href="./libs/swiper-3.4.0.min.css" />
+    <link rel="stylesheet" href="./libs/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/DRP.css" />
+    <link rel="stylesheet" type="text/css" href="./css/zone.css" />
+    
+    <link rel="stylesheet" type="text/css" href="./css/SECVPT.css" />
+    <link rel="stylesheet" type="text/css" href="./css/paper.css" />
+    <link rel="stylesheet" type="text/css" href="./css/about.css" />
+    <link rel="stylesheet" type="text/css" href="./css/customer.css" />
+    <!-- <script src="http://cdn.bootcdn.net/jquery-migrate-1.2.1.min.js"></script> -->
+
+    <title>零零信安 | ASM | 攻击面 | 外部攻击面管理专家 | 比攻击者更快一步了解您自己的风险</title>
+    <style>
+      @media screen and (max-width: 600px) {
+        .home {
+          width: 100% !important;
+          height: 100vh !important;
+          background: #bcc2c8 url("./img/sjbg@2x.png") no-repeat !important;
+          background-size: 100% 100% !important;
+          background-attachment: fixed;
+          background-position: bottom !important;
+          position: relative;
+        }
+        #myMenu .menu {
+          display: none;
+        }
+        .home h1 {
+          line-height: 49px !important;
+          font-size: 44px !important;
+        }
+        .home h2 {
+          line-height: 133px !important;
+        }
+        .DRP {
+          width: 100% !important;
+          height: 100% !important;
+          background: #161616 !important;
+        }
+
+        .zone {
+          width: 100% !important;
+          height: 100% !important;
+          background: #bcc2c8 !important;
+        }
+
+        .SECVPT {
+          width: 100% !important;
+          height: 100% !important;
+          background: #161616 !important;
+        }
+
+        /* .paper {
+          width: 100% !important;
+          height: 100vh !important;
+          background: #bcc2c8 !important;
+        } */
+
+        .paper {
+          width: 100% !important;
+          height: 100% !important;
+        }
+        .about {
+          width: 100% !important;
+          height: 100% !important;
+          background: #161616 !important;
+        }
+        .customer {
+          width: 100% !important;
+          height: 100% !important;
+          background: #bcc2c8 !important;
+          position: relative;
+        }
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      .section {
+        text-align: center;
+        font: 50px "Microsoft Yahei";
+        width: 100%;
+        height: 100vh;
+      }
+
+      .section p {
+        font: 30px "Microsoft Yahei";
+      }
+
+      #myMenu {
+        position: relative;
+        z-index: 1;
+        top: 50px;
+        margin-top: -50px;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+      #myMenu {
+        animation-name: fadeInDown;
+      }
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -100%, 0);
+        }
+
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      .menuList {
+        list-style: none;
+        float: left;
+      }
+
+      .home {
+        width: 100% !important;
+        height: 100vh !important;
+
+        background: #bcc2c8;
+        background-size: 100% 0%;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      .DRP {
+        width: 100% !important;
+        height: 100vh;
+        background: #161616 url("./img/bg022x.png") no-repeat;
+        background-size: 100% 100% !important;
+      }
+
+      .zone {
+        width: 100%;
+        height: 100vh;
+        background: #bcc2c8 url("./img/bg03.png") no-repeat;
+        background-size: 100% 100% !important;
+        margin-top: -22px;
+      }
+
+      .SECVPT {
+        width: 100%;
+        height: 100vh;
+        background: #161616 url("./img/bg042x.png") no-repeat;
+        background-size: 100% 100% !important;
+        margin-top: -22px;
+      }
+
+      .paper {
+        width: 100%;
+        height: 100vh;
+        background: #bcc2c8 url("./img/bg03.png") no-repeat;
+        background-size: 100% 100% !important;
+        margin-top: -22px;
+      }
+
+      .about {
+        width: 100%;
+        height: 100vh;
+        /* background: #161616 url("./img/bg-06@2x (1).png") no-repeat; */
+        background: #161616;
+
+        /* background-size: 100% 65% !important; */
+      }
+      .about .about-img {
+        width: 100% !important;
+        height: 500px;
+        margin-top: -147px;
+
+        background: #161616 url("./img/bg-06@2x (1).png") no-repeat;
+        background-size: 1400px 100% !important;
+        background-position: center center;
+      }
+      .about-contentall {
+        height: 100%;
+      }
+      .customer {
+        width: 100%;
+        height: 100vh;
+        background: #bcc2c8 url("./img/bg03.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul id="myMenu">
+      <div class="myMenu-logn">
+        <a href="/">
+          <img src="./img/logoh@2x.png" alt="" class="img" id="logoh" />
+        </a>
+      </div>
+      <div class="menu">
+        <li data-menuanchor="AMS" class="menuList">
+          <a href="#AMS" class="menuList-a">00SEC-ASM™</a>
+        </li>
+        <li data-menuanchor="WD" class="menuList">
+          <a href="#WD" class="menuList-a">00SEC-WD™</a>
+        </li>
+        <li data-menuanchor="VPT" class="menuList">
+          <a href="#VPT" class="menuList-a">00SEC-VPT ™</a>
+        </li>
+        <li data-menuanchor="paper" class="menuList">
+          <a href="#paper" class="menuList-a">技术论文</a>
+        </li>
+        <li data-menuanchor="about" class="menuList">
+          <a href="#about" class="menuList-a">关于我们</a>
+        </li>
+        <li data-menuanchor="customer" class="menuList">
+          <a href="#customer" class="menuList-a">客户和伙伴</a>
+        </li>
+       
+        <li class="website menuList">
+          <a
+            target="_blank"
+            style="color: #cf3c16"
+            class="website-a"
+            href="https://0.zone"
+            >探索0.zone
+          </a>
+        </li>
+      </div>
+    </ul>
+    <div id="fullpage">
+      <div class="section home active">
+        <h1>基于客户视角的 <span class="sum">『攻击面管理』</span></h1>
+        <h2>Attack Surface Management</h2>
+        <div class="website">
+          <a
+            target="_blank"
+            style="color: #cf3c16"
+            class="website-a"
+            href="https://0.zone"
+            >探索0.zone
+          </a>
+        </div>
+        <div class="pull-down">
+          <div class="name">向下滚动</div>
+          <div class="down">
+            <img src="./img/icon-xh@2x.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="section DRP">
+        <div class="DRP-content">
+          <div class="DRP-left">
+            <h2>
+              00SEC-ASM™
+              <br />
+              <span>攻击面管理系统</span>
+            </h2>
+            <div class="se"></div>
+            <div class="DRP-left-sum">
+              00SEC-ASM™零零信安攻击面管理系统，将组织机构与其不断发展的数字足迹进行映射、与漏洞情报数据进行关联，
+              并持续发现业务数据和代码泄露、组织机构和人员信息的泄露、以及对供应链的攻击面进行检测，
+              通过对全球开放网络和非公开网络的数千个情报源、数百亿量级数据、本组织自身业务上下文等进行大量数据采集和弱点优先级分析，
+              为组织机构输出攻击面情报，以提供给本组织更高级别的主动防御。
+            </div>
+          </div>
+
+          <div class="DRP-right">
+            <img src="./img/ps-02@2x.png" alt="" />
+          </div>
+        </div>
+        <!-- <div class="DRP-below">
+          <img src="./img/icon-Gartner@2x.png" alt="" class="Gartner" />
+          <div class="sum">
+            <span>数字风险保护（DRP）：</span>
+            通过提供技术与服务，保护组织的关键数字资产和数据免受外部威胁。这些解决方案提供了对开放（表面）网络、社交媒体、暗网和深网的可视性，以识别关键资产的潜在威胁，并提供有关威胁参与者、其进行恶意活动的策略和流程的背景信息。
+          </div>
+        </div> -->
+      </div>
+      　　
+      <div class="section zone">
+        <div class="zone-h2">00SEC-WD™ <span>核心引擎系统</span></div>
+        <div class="zone-h3">
+          <span class="wire"></span>
+          <span class="garden" style="margin-right: 10px"></span>
+          Attck Surface Management
+          <span class="garden" style="margin-left: 10px"></span>
+          <span class="wire"></span>
+        </div>
+        <div class="zone-content">
+          <div class="zone-content-li">
+            <img src="./img/icon-tz@2x.png" alt="" />
+            <span class="name">挑战：获得攻击者的视角</span>
+            <!-- <span class="sum">企业有哪些数字风险？获得攻击者的视角</span> -->
+            <span class="data"
+              >为了保护您的组织机构，您首先需要知道要保护哪些 IT 资产、业务数据和数字资产，尤其是更容易被黑客攻击的影子资产以及不断添加和变更的资产和数据。在公开和非公开网络中，暴露、泄露、贩卖的组织机构和人员的业务数据、产品代码、敏感信息、电子凭证、个人隐私等数据，都可能被黑客利用。</span
+            >
+          </div>
+          <div class="zone-content-li">
+            <img src="./img/icon-rh@2x.png" alt="" />
+            <span class="name">如何处置</span>
+            <!-- <span class="sum">不断监控和深入分析情报源数据</span> -->
+            <span class="data"
+              >主动发现组织机构的域名、应用程序、违规开放的服务、IOT设备、影子资产、可被 1day 漏洞利用的服务、存在缺省口令和弱口令的设备等，以及从不断增长的威胁源列表中深入分析暴露、泄露、贩卖的情报，并将其与组织机构进行映射，协助本组织做出更快、更明智的决策和处置策略。
+            </span>
+          </div>
+          <div class="zone-content-li">
+            <img src="./img/icon-wm@2x.png" alt="" />
+            <span class="name">我们的优势</span>
+            <!-- <span class="sum">全面的高价值主动情报数据</span> -->
+            <span class="data"
+              >00SEC-WD™核心引擎系统，是零零信安的智能数据集群，它通过一系列内置的针对性数据探针，针对全球公开网络和非公开网络，以及数千个威胁源进行持续监测，每天以数千万 IT 资产数据和数百万情报项目添加到数据池中，并通过专有算法，将其进行关联和整合，为组织机构提供可能被黑客利用从而造成风险的攻击面数据。
+            </span>
+          </div>
+        </div>
+      </div>
+      　　
+      <div class="section SECVPT">
+        <h3>00SEC-VPT™ <span>漏洞管理系统</span></h3>
+        <div class="SECVPT-h3">Vulnerability Management System</div>
+        <div class="SECVPT-content">
+          <img src="./img/ps-04@2x.png" alt="" />
+          <span class="name">
+            漏洞<br />
+            全生命周期 <br />管理
+          </span>
+          <div class="discover content-discover">
+            <div class="discover-name">
+              <div><span>01</span> 全局资产发现</div>
+              <img src="./img/icon-qjfx.png" alt="" class="ioc" />
+            </div>
+            <div class="discover-content">
+              基于数万条指纹和数据探针，全面识别企业IT资产、开放服务和各类业务系统
+            </div>
+          </div>
+          <div class="visualization content-discover">
+            <div class="discover-name">
+              <div>
+                <span>02</span>
+                风险和处置可视化
+              </div>
+              <img src="./img/icon-ksh.png" alt="" class="ioc" />
+            </div>
+            <div class="discover-content">
+              通过清晰的数据关联、统计分析，将全局风险、资产和漏洞变化、修复时长和修复指标等，进行可视化，配合企业的挂图作战和态势感知
+            </div>
+          </div>
+          <div class="response content-discover">
+            <div class="discover-name">
+              <div>
+                <span>03</span>
+                数字化应急响应
+              </div>
+              <img src="./img/icon-szhxy.png" alt="" class="ioc" />
+            </div>
+            <div class="discover-content">
+              灵活的账号体系，可支持外部渗透测试漏洞提交和电子化管理，协助企业更加全面的进行风险管理
+            </div>
+          </div>
+          <div class="disposition content-discover">
+            <div class="discover-name">
+              <div><span>04</span>自动化编排处置</div>
+              <img src="./img/icon-zdh.png" alt="" class="ioc" />
+            </div>
+            <div class="discover-content">
+              通过多级权限和工单功能，可实现跨部门处置流程，结合扫描器自动调用和流程编排，有效提高修复和复测效率
+            </div>
+          </div>
+          <div class="sort content-discover">
+            <div class="discover-name">
+              <div><span>05</span>智能优先级排序</div>
+              <img src="./img/icon-yxjpx.png" alt="" class="ioc" />
+            </div>
+            <div class="discover-content">
+              对数十万漏洞进行高级情报分析，结合企业业务、CVSS、漏洞情报、威胁情报、全球漏洞普适度和利用性等数据，为用户提供修复指导方案
+            </div>
+          </div>
+          <div class="assess content-discover">
+            <div class="discover-name">
+              <div><span>06</span>多维度风险评估</div>
+              <img src="./img/icon-ksh2.png" alt="" class="ioc" />
+            </div>
+            <div class="discover-content">
+              可自动调度各主流扫描器及分析，配合自研的1day和缺省/弱口令检测功能，最大化发现企业漏洞
+            </div>
+          </div>
+        </div>
+      </div>
+      　　
+      <div class="section paper">
+        <div class="paper-h2">技术论文</div>
+        <div class="paper-h3">
+          <span class="wire"></span>
+          <span class="garden" style="margin-right: 10px"></span>
+          Technical Paper
+          <span class="garden" style="margin-left: 10px"></span>
+          <span class="wire"></span>
+        </div>
+        <div class="paper-content">
+          <a
+            class="paper-content-li"
+            target="_blank"
+            href="https://mp.weixin.qq.com/s/1JxrkT6VAQzOys8923qHUQ"
+          >
+            <div class="li-name">
+              <span class="tab">VPT</span>
+              <span>弱点与漏洞优先级技术（VPT）导论 </span>
+            </div>
+            <div class="li-rest">
+              <span class="time">
+                <img src="./img/icon-sj@2x.png" alt="" />
+                2021-09-06</span
+              >
+              <span class="source">
+                <img src="./img/icon-ly@2x.png" alt="" />零零信安原创</span
+              >
+            </div>
+            <div class="or"></div>
+          </a>
+          <a
+            class="paper-content-li"
+            target="_blank"
+            href="https://mp.weixin.qq.com/s/3TE_jjGQMwpmSnkx5Vmnnw"
+          >
+            <div class="li-name">
+              <span class="tab">DevSevOps</span>
+              <span>WhiteSource：DevSecOps安全与开发的博弈 </span>
+            </div>
+            <div class="li-rest">
+              <span class="time">
+                <img src="./img/icon-sj@2x.png" alt="" />2021-09-01</span
+              >
+              <span class="source"
+                ><img src="./img/icon-ly@2x.png" alt="" />零零信安原创</span
+              >
+            </div>
+            <div class="or"></div>
+          </a>
+
+          <a
+            class="paper-content-li"
+            target="_blank"
+            href="https://mp.weixin.qq.com/s/Y6Nec0Qbff8z7jccBZVMjw"
+          >
+            <div class="li-name">
+              <span class="tab">VPT</span>
+              <span>Tenable：专注于构成最大风险的漏洞 </span>
+            </div>
+            <div class="li-rest">
+              <span class="time">
+                <img src="./img/icon-sj@2x.png" alt="" />2021-08-11</span
+              >
+              <span class="source"
+                ><img src="./img/icon-ly@2x.png" alt="" />零零信安原创</span
+              >
+            </div>
+            <div class="or"></div>
+          </a>
+          <a
+            class="paper-content-li"
+            target="_blank"
+            href="https://mp.weixin.qq.com/s/j7r2z24VxB4W__n_kdeWLQ"
+          >
+            <div class="li-name">
+              <span class="tab">VPT</span>
+              <span>Tenable：如何确定网络攻击面上的风险优先级 </span>
+            </div>
+            <div class="li-rest">
+              <span class="time">
+                <img src="./img/icon-sj@2x.png" alt="" />2021-08-02</span
+              >
+              <span class="source"
+                ><img src="./img/icon-ly@2x.png" alt="" />零零信安原创</span
+              >
+            </div>
+            <div class="or"></div>
+          </a>
+          <a
+            class="paper-content-li"
+            target="_blank"
+            href="https://mp.weixin.qq.com/s?__biz=Mzg4NjM0OTAyNQ==&mid=2247483954&idx=2&sn=c27bd77f77f1fa65b61eeabe2230fa4b&chksm=cf9a4fbcf8edc6aa4ad029e5a3534638c19346c16182fe078e9189c09147122a7a3d021c64e3&token=1894389656&lang=zh_CN#rd"
+          >
+            <div class="li-name">
+              <span class="tab"> BCI 安全 </span>
+              <span>兰德公司：身联网（IOB）的机会，风险和治理 </span>
+            </div>
+            <div class="li-rest">
+              <span class="time">
+                <img src="./img/icon-sj@2x.png" alt="" />2021-01-10</span
+              >
+              <span class="source"
+                ><img src="./img/icon-ly@2x.png" alt="" />零零信安原创</span
+              >
+            </div>
+            <div class="or"></div>
+          </a>
+
+          <a
+            class="paper-content-li"
+            target="_blank"
+            href="https://mp.weixin.qq.com/s?__biz=Mzg4NjM0OTAyNQ==&mid=2247483954&idx=3&sn=189814f45bece80c1ecf8d429b90930c&chksm=cf9a4fbcf8edc6aaee9f46790064179e2f994a1c331cd274814d0799f333f5b15f91b3a7b5ef&token=1894389656&lang=zh_CN#rd"
+          >
+            <div class="li-name">
+              <span class="tab">BCI 安全</span>
+              <span>兰德公司：脑机接口：美国军事应用和意义，初步评估 </span>
+            </div>
+            <div class="li-rest">
+              <span class="time">
+                <img src="./img/icon-sj@2x.png" alt="" />2021-01-10</span
+              >
+              <span class="source"
+                ><img src="./img/icon-ly@2x.png" alt="" />零零信安原创</span
+              >
+            </div>
+            <div class="or"></div>
+          </a>
+
+          <a
+            class="paper-content-li"
+            target="_blank"
+            href="https://mp.weixin.qq.com/s/PeQJc0yGYub0T3hDgBiR1Q"
+          >
+            <div class="li-name">
+              <span class="tab">BCI 安全</span>
+              <span>神经工程与脑机接口信息安全全景图 </span>
+            </div>
+            <div class="li-rest">
+              <span class="time">
+                <img src="./img/icon-sj@2x.png" alt="" />2020-11-19</span
+              >
+              <span class="source"
+                ><img src="./img/icon-ly@2x.png" alt="" />零零信安原创</span
+              >
+            </div>
+            <div class="or"></div>
+          </a>
+
+          <a
+            class="paper-content-li"
+            target="_blank"
+            href="https://www.sohu.com/a/387078641_354899"
+          >
+            <div class="li-name">
+              <span class="tab">通用</span>
+              <span>对抗中的主动防御：护网及小规模网络对抗的战术 </span>
+            </div>
+            <div class="li-rest">
+              <span class="time">
+                <img src="./img/icon-sj@2x.png" alt="" />2020-10-15</span
+              >
+              <span class="source"
+                ><img src="./img/icon-ly@2x.png" alt="" />零零信安原创</span
+              >
+            </div>
+            <div class="or"></div>
+          </a>
+        </div>
+      </div>
+      　　
+      <div class="section about">
+        <!-- <img src="./img/left@2x.png" alt="" style="height: 9px" class="about-left"> -->
+        <div class="about-contentall" style="width: 100%; margin: 0 auto">
+          <div class="about-img">
+            <h3>关于我们</h3>
+            <div class="about-describe">
+              北京零零信安科技有限公司，是由一群在网络攻防一线深耕细作多年的安全专家和技术研究人员组成的团队。
+
+              <br />
+              <br />
+
+              <span
+                >公司基于大数据立体攻防、以攻促防、主动防御，力求取得立竿见影效果的理念，为客户提供基于客户视角的攻击面管理技术、产品和服务。
+              </span>
+            </div>
+          </div>
+
+          <div class="about-baderry">
+            <img src="./img/left@2x.png" alt="" style="width: 30px" />
+            <span class="wire"></span>
+            <div class="about-content">
+              <div class="content10 contentsum">
+                <div class="content10-name">2020.10</div>
+                <div class="content10-sum">
+                  发布公司第一款产品“零零信安漏洞管理系统v0.1”
+                </div>
+              </div>
+              <div class="content03 contentsum">
+                <div class="content10-name">2021.03</div>
+                <div class="content10-sum">
+                  国内首家实现“弱点/漏洞优先级技术（VPT）”产品化的公司
+                </div>
+              </div>
+              <div class="content11 contentsum">
+                <div class="content10-name">2021.11</div>
+                <div class="content10-sum">
+                  完成千万级天使轮融资，由奇安基金独家投资；
+                </div>
+              </div>
+              <div class="content02 contentsum">
+                <div class="content10-name">2022.03</div>
+                <div class="content10-sum">
+                  发布“00SEC-ASM”攻击面管理系统v1.0
+                </div>
+              </div>
+
+              <img src="./img/z@2x.png" alt="" />
+
+              <div class="content05 contentsum">
+                <div class="content10-name">2020.05</div>
+                <div class="content20-sum">北京零零信安科技有限公司成立</div>
+              </div>
+              <div class="content2011 contentsum">
+                <div class="content10-name">2020.11</div>
+                <div class="content20-sum">
+                  发布国内首个全面阐述BCI安全的方案《神经工程学与脑机接口信息安全全景图》
+                </div>
+              </div>
+              <div class="content07 contentsum">
+                <div class="content10-name">2021.07</div>
+                <div class="content20-sum">
+                  ISC 2021大会，发布“00SEC-VPT弱点和漏洞管理系统v1.0”
+                </div>
+              </div>
+              <div class="content01 contentsum">
+                <div class="content10-name">2022.02</div>
+                <div class="content10-sum">
+                  国内首个在线ASM平台0.zone（v0.1）上线
+                </div>
+              </div>
+            </div>
+            <span class="wire"></span>
+            <img src="./img/y@2x.png" alt="" style="width: 30px" />
+          </div>
+          <div class="about-baderry about-baderrysj">
+            <img src="./img/lset 603.png" alt="" class="img" />
+
+            <div class="about-content">
+              <div style="height: 156px">
+                <div class="content02 contentsum">
+                  <div class="content10-name">2022</div>
+                  <div class="content10-sum">
+                    <span>3月 发布“00SEC-ASM”攻击面管理系统v1.0</span>
+                  </div>
+                </div>
+                <div class="content01 contentsum">
+                  <div class="content10-sum">
+                    <span>2月国内首个在线ASM平台0.zone（v0.1）上线</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="height: 217px">
+                <div class="content11 contentsum" style="margin-bottom: 5px">
+                  <div class="content10-name">2021</div>
+                  <div class="content10-sum">
+                    <span>11月</span>
+                    完成
+                    <span>千万级天使轮融资</span>
+                    ，由奇安基金独家投资；
+                  </div>
+                </div>
+
+                <div class="content07 contentsum" style="margin-bottom: 5px">
+                  <div class="content20-sum">
+                    <span>7月</span> ISC
+                    2021大会，发布“00SEC-VPT弱点和漏洞管理系统v1.0”
+                  </div>
+                </div>
+                <div class="content03 contentsum" style="margin-bottom: 5px">
+                  <div class="content10-sum">
+                    <span>3月</span> 国内首家实现
+                    <span>“弱点/漏洞优先级技术（VPT）”</span>
+                    产品化的公司
+                  </div>
+                </div>
+              </div>
+              <div class="content05 contentsum" style="margin-bottom: 10px">
+                <div class="content10-name">2020</div>
+                <div class="content20-sum">
+                  <span>11月</span>
+                  发布国内首个全面阐述BCI安全的方案《神经工程学与脑机接口信息安全全景图》
+                </div>
+              </div>
+              <div class="content10 contentsum" style="margin-bottom: 10px">
+                <div class="content10-sum">
+                  <span>10月</span> 发布公司第一款产品<span
+                    >“零零信安漏洞管理系统v0.1”</span
+                  >
+                </div>
+              </div>
+              <div class="content05 contentsum" style="margin-bottom: 10px">
+                <div class="content20-sum">
+                  <span>5月</span>
+                  北京零零信安科技有限公司成立
+                </div>
+              </div>
+
+              <img src="./img/z@2x.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- <img src="./img/y@2x.png" alt="" style="height: 9px" class="about-right"> -->
+      </div>
+      <div class="section customer">
+        <div class="customer-h2">客户和伙伴</div>
+
+        <div class="customer-h3">
+          <span class="wire"></span>
+          <span class="garden" style="margin-right: 10px"></span>
+          Customers and Partners
+          <span class="garden" style="margin-left: 10px"></span>
+          <span class="wire"></span>
+        </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="customer-content" id="content01">
+                <div class="content-li">
+                  <img src="./img/logo/logo-应急管理部@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-水利部@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-中国人寿@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo--中国电信@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-河北农信银行@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-中国邮政@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-宝马@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-腾讯云@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-奇安信@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-贵州银行@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-中银保信@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-云通信@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-凡普金科@2x.png" alt="" />
+                </div>
+
+                <div class="content-li">
+                  <img src="./img/logo/logo-360@2x.png" alt="" />
+                </div>
+                <div class="content-li linoen">
+                  <img src="./img/logo/logo-神策数据@2x.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="customer-content" id="content02">
+                <div class="content-li linoen">
+                  <img src="./img/logo/logo-神策数据@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-luckin coffee@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-VIP KID@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-奇安投资_@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-安全419@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-安域领创@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-安恒信息@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-安胜@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-张家口银行@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-心知天气@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-烨泰明天@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-禹宏信安科技@2x.png" alt="" />
+                </div>
+                <div class="content-li">
+                  <img src="./img/logo/logo-金钻芯@2x.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- <div class="content-ellipse">
+          <span class="ellipse on" id="on1"></span>
+          <span class="ellipse" id="on2"></span>
+        </div> -->
+        <div class="customer-bouunt">
+          Copyright © 2020 00SEC, Inc. All Rights Reserved.
+
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">
+            京ICP备20022378号-1
+          </a>
+
+          <img src="./img/records.jpg" alt="" style="width: 13px" />
+          <a
+            target="_blank"
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802038817"
+            rel="noreferrer"
+          >
+            京公网安备 11010802038817号
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./libs/jquery.min.js"></script>
+  <script src="./libs/fullpage.min.js"></script>
+  <script src="./libs/jquery.easing.min.js"></script>
+  <script src="./libs/jquery.slimscroll.min.js"></script>
+  <script src="./libs/swiper-3.4.0.jquery.min.js"></script>
+  <script>
+    //
+    $(".home").css({
+      height: "100%",
+      background: `#bcc2c8 url("./img/bg-01@2x(1).png") no-repeat`,
+      "background-size": "100% 0%",
+      "background-attachment": "fixed",
+    });
+    setTimeout(() => {
+      $(".home").css({
+        height: "100%",
+        background: `#bcc2c8 url("./img/bg-01@2x(1).png") no-repeat`,
+        "background-size": "100% 100%",
+        "background-attachment": "fixed",
+      });
+    }, 100);
+
+    if (
+      navigator.userAgent.match(/Mobi/i) ||
+      navigator.userAgent.match(/Android/i) ||
+      navigator.userAgent.match(/iPhone/i)
+    ) {
+      $("#content01sj").css({
+        display: "flex",
+        width: "345px",
+        padding: "0 20px",
+        "justify-content": "space-between",
+      });
+      $("#on1").click(() => {
+        $("#on1").addClass("on");
+        $("#on2").removeClass("on");
+
+        $("#content01sj").css({
+          display: "flex",
+          width: "345px",
+          padding: "0 20px",
+          "justify-content": "space-between",
+        });
+        $("#content02sj").css({
+          display: "none",
+          width: "345px",
+          padding: "0 20px",
+          "justify-content": "space-between",
+        });
+      });
+      $("#on2").click(() => {
+        console.log($("#content01sj"));
+        $("#on2").addClass("on");
+        $("#on1").removeClass("on");
+
+        $("#content01sj").css({
+          display: "none",
+          width: "345px",
+          padding: "0 20px",
+          "justify-content": "space-between",
+        });
+        $("#content02sj").css({
+          display: "flex",
+          width: " 345px",
+          padding: "0 20px",
+          "justify-content": "space-between",
+        });
+      });
+      $(function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          autoplay: 3000,
+          pagination: ".swiper-pagination",
+          paginationClickable: true,
+        });
+      });
+    } else {
+      // 初始化fullpage
+      $(function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          autoplay: 3000,
+          pagination: ".swiper-pagination",
+          paginationClickable: true,
+        });
+
+        $("#fullpage").fullpage({
+          menu: "#myMenu",
+          lockAnchors: false,
+          navigation:
+            navigator.userAgent.match(/Mobi/i) ||
+            navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/iPhone/i)
+              ? false
+              : true,
+          // navigationTooltips: ['firstSlide', 'secondSlide'],
+          // showActiveTooltip: false,
+          // slidesNavigation: false,
+          // slidesNavigation: true,//是否显示横向幻灯片的导航，默认为false
+          sectionsColor: [
+            "#cbcfd3",
+            "#161616",
+            "#F0F3F9",
+            "#161616",
+            "#F0F3F9",
+          ],
+          anchors: ["home", "AMS", "WD", "VPT", "paper", "about", "customer"],
+
+          slidesNavPosition: "top", //横向导航的位置，默认为bottom，可以设置为top或bottom
+          navigationPosition: "right", //导航小圆点的位置
+          css3: true, //是否使用CSS3 transforms来实现滚动效果，默认为true
+          scrollingSpeed: 1000, //设置滚动速度，单位毫秒，默认700
+          autoScrolling: true, //是否使用插件的滚动方式，默认为true,若为false则会出现浏览器自带滚动条
+          fitToSection: true, //设置是否自适应整个窗口的空间，默认值：true
+          scrollBar: false, //是否包含滚动条，默认为false,若为true浏览器自带滚动条出现
+          easing: "easeInOutCubic", //定义页面section滚动的动画方式，若修改此项需引入jquery.easing插件
+          easingcss3: "ease", //定义页面section滚动的过渡效果，若修改此项需引入第三方插件
+          loopBottom: false, //滚动到最低部后是否连续滚动到顶部，默认为false
+          loopTop: false, //滚动到最顶部后是否连续滚动到底部，默认为false
+          loopHorizontal: true, //横向slide幻灯片是否循环滚动，默认为true
+          continuousVertical: false, //是否循环滚动，不兼容loopTop和loopBottom选项
+          scrollOverflow: false, //内容超过满屏后是否显示滚动条，true则显示滚动条，若需滚动查看内容还需要jquery.slimscroll插件的配合
+          touchSensitivity: 15, //在移动设备中滑动页面的敏感性，默认为5最高100，越大越难滑动
+          // normalScrollElementTouchThreshold: 5,
+          // resize: true,
+          paddingTop: "50px",
+          afterLoad: function (anchorLink, index) {
+            // 滚动到某一屏后的回调函数，anchorLink 是锚链接的名称，index 是序号，从1开始计算
+          },
+          onLeave: function (anchorLink, index) {
+            if (
+              index.anchor == "AMS" ||
+              index.anchor == "VPT" ||
+              index.anchor == "about"
+            ) {
+              $("#logoh").attr("src", "./img/logo-@2x.png");
+              $(".website").css({
+                background: "linear-gradient(271deg, #D33D16, transparent)",
+              });
+              // website-a
+              $(".website-a").css({
+                color: "#fff",
+              });
+              // $(".menuList-a").css({
+              //   color: "#c4c7d1",
+              // });
+
+              // $(".active").children(a).css({
+              //   color: "#CF3C16",
+              // });
+            } else {
+              $("#logoh").attr("src", "./img/logoh@2x.png");
+              $(".website").css({
+                background: "linear-gradient(271deg, #fff, transparent)",
+              });
+              //#c4c7d1
+              $(".website-a").css({
+                color: "#D33D16",
+              });
+              // $(".menuList-a").css({
+              //   color: "#616677",
+              // });
+            }
+          },
+        });
+      });
+    }
+  </script>
+  <script src="/libs/wx.js"></script>
+</html>
